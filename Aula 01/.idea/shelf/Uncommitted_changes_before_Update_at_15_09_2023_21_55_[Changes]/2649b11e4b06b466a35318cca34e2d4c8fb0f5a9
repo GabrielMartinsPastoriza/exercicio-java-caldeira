@@ -1,0 +1,6 @@
+
+S
+java:S1854	"8Remove this useless assignment to local variable "word".(½š„ÿÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ÀÔûô
+D
+java:S1481	")Remove this unused "word" local variable.(½š„ÿÿÿÿÿ
