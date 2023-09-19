@@ -22,8 +22,8 @@ public class numeros {
         }
 
           }
-        public static double somar(double primeiroNumero, double segundoNumero){
-           return primeiroNumero + segundoNumero;
+    public static double somar(double primeiroNumero, double segundoNumero){
+        return primeiroNumero + segundoNumero;
 
       }
     };
