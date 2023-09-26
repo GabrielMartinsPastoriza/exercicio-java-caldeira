@@ -1,3 +1,5 @@
+package org.labs02;
+
 import java.util.Scanner;
 
 public class NumerosPrimos {
