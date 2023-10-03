@@ -1,10 +1,9 @@
-package com.org.labs03;
+package com.org.labs03.Banco;
 
 import java.time.LocalTime;
 import java.util.Scanner;
 
 public class ContaBancaria {
-  
     private String nome;
     private String cpf;
     private int identificaConta;
@@ -13,8 +12,7 @@ public class ContaBancaria {
     private double saldo;
     private LocalTime horaAtual;
 
-    public ContaBancaria(String nome, String cpf, int identificaConta, String endereco, String banco, double saldo, LocalTime horaAtual){
-
+    public ContaBancaria(String nome, String cpf, int identificaConta, String endereco, String banco, double saldo, LocalTime horaAtual) {
         this.nome = nome;
         this.cpf = cpf;
         this.identificaConta = identificaConta;
@@ -23,48 +21,48 @@ public class ContaBancaria {
         this.saldo = saldo;
         this.horaAtual = horaAtual;
     }
-   
+
     public void saque(double valor) {
-      String mensagem = (saldo >= valor) ? "realizado com sucesso." : "Não foi possível realizar o saque.";
-      saldo = (saldo >= valor) ? saldo - valor : saldo;
-      System.out.println("Saque de R$" + valor + mensagem);
+        String mensagem = (saldo >= valor) ? "realizado com sucesso." : "Não foi possível realizar o saque.";
+        saldo = (saldo >= valor) ? saldo - valor : saldo;
+        System.out.println("Saque de R$" + valor + mensagem);
     }
 
-    public void deposito(double valor){
+    public void deposito(double valor) {
         saldo += valor;
         System.out.println("Depósito de R$" + valor + " realizado com sucesso.");
     }
 
-    public void pix(double valor){
+    public void pix(double valor) {
         String mensagem = (horaAtual.isAfter(LocalTime.of(8, 0)) && horaAtual.isBefore(LocalTime.of(19, 0))) ?
-        (saldo >= valor ? "realizado com sucesso." : "Não foi possível realizar a transferência pix.") : 
-        "A transferência PIX Só pode ser realizada entre 8h até as 19h.";
-     
-        if (horaAtual.isAfter(LocalTime.of(8,0)) && horaAtual.isBefore(LocalTime.of(19,0))) {
+                (saldo >= valor ? "realizado com sucesso." : "Não foi possível realizar a transferência pix.") :
+                "A transferência PIX só pode ser realizada entre 8h e 19h.";
+
+        if (horaAtual.isAfter(LocalTime.of(8, 0)) && horaAtual.isBefore(LocalTime.of(19, 0))) {
             saldo = (saldo >= valor) ? saldo - valor : saldo;
         }
-         System.out.println("Transferência PIX de R$" + valor + mensagem);
+        System.out.println("Transferência PIX de R$" + valor + mensagem);
     }
 
-    public void transfencia(double valor){
-        String mensagem = (horaAtual.isAfter(LocalTime.of(8, 0)) && horaAtual.isBefore(LocalTime.of(19, 0)))?
-        (saldo >= valor ? "realizado com sucesso." : "Não foi possível realizar a transferência.") :
-        "A transferência só pode ser realizadad entre 8h e 19h.";
+    public void transfencia(double valor) {
+        String mensagem = (horaAtual.isAfter(LocalTime.of(8, 0)) && horaAtual.isBefore(LocalTime.of(19, 0))) ?
+                (saldo >= valor ? "realizado com sucesso." : "Não foi possível realizar a transferência.") :
+                " A transferência só pode ser realizada entre 8h e 19h.";
 
-        if (horaAtual.isAfter(LocalTime.of(9,0)) && horaAtual.isBefore(LocalTime.of(19, 0))) {
+        if (horaAtual.isAfter(LocalTime.of(9, 0)) && horaAtual.isBefore(LocalTime.of(19, 0))) {
             saldo = (saldo >= valor) ? saldo - valor : saldo;
         }
-         System.out.println("A transferência de R$" + valor + mensagem);
-    } 
+        System.out.println("A transferência de R$" + valor + mensagem);
+    }
 
     public void verificaSaldo() {
         System.out.println("Seu saldo é de: R$" + saldo);
     }
 
     public void verificaHora() {
-       System.out.println("Confira agora a hora atual: " + horaAtual);
+        System.out.println("Confira agora a hora atual: " + horaAtual);
     }
-  
+
     public static ContaBancaria cadastrarUsuario() {
         Scanner input = new Scanner(System.in);
         System.out.println("Cadastro de novo usuário:");
@@ -137,9 +135,6 @@ public class ContaBancaria {
         } while (opcao != 0);
         input.close();
     }
-
-    public static void main(String[] args) {
-        ContaBancaria conta = cadastrarUsuario();
-        painelMenu(conta);
-    }
 }
+
+  
