@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Aula 02/src/exercicio-java-caldeira/Aula 01/Aula 01.iml" filepath="$PROJECT_DIR$/Aula 02/src/exercicio-java-caldeira/Aula 01/Aula 01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aula 02/Aula 02.iml" filepath="$PROJECT_DIR$/Aula 02/Aula 02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aula 02/src/exercicio-java-caldeira/Aula 02/Aula 021.iml" filepath="$PROJECT_DIR$/Aula 02/src/exercicio-java-caldeira/Aula 02/Aula 021.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicio-java-caldeira.iml" filepath="$PROJECT_DIR$/exercicio-java-caldeira.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicio-java-caldeira/exercicio-java-caldeira1.iml" filepath="$PROJECT_DIR$/exercicio-java-caldeira/exercicio-java-caldeira1.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/exercicio-java-caldeira.iml" filepath="$PROJECT_DIR$/exercicio-java-caldeira.iml" />
+>>>>>>> 6c4686d32d9acd3a01a0669aac2ecf696d34ac2c
     </modules>
   </component>
 </project>

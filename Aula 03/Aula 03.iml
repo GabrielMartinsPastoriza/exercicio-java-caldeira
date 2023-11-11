@@ -3,15 +3,9 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exerciciosaula03/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
-<<<<<<< HEAD
-  <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="83944da3-e4ca-4cec-8960-2b0d967b6f66" />
-  </component>
-=======
->>>>>>> 6c4686d32d9acd3a01a0669aac2ecf696d34ac2c
 </module>
